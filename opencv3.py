@@ -4,11 +4,11 @@
 import cv2
 
 # 각종 이미지 파일 플래그 알아보기
-img = cv2.imread("iu.jpg", cv2.IMREAD_UNCHANGED) #원본 사용
+# img = cv2.imread("iu.jpg", cv2.IMREAD_UNCHANGED) #원본 사용
 # img = cv2.imread("iu.jpg", cv2.IMREAD_GRAYSCALE) #1채널, 그레이스케일(흑백) 적용
 # img = cv2.imread("iu.jpg", cv2.IMREAD_COLOR) #3채널, BGR 이미지 적용
 # img = cv2.imread("iu.jpg", cv2.IMREAD_ANYDEPTH) #이미지에 따라 정밀도를 16/32비트 or 8비트로 사용
-# img = cv2.imread("iu.jpg", cv2.IMREAD_ANYCOLOR) #가능한 3채널, 색상 이미지로 사용
+img = cv2.imread("iu.jpg", cv2.IMREAD_ANYCOLOR) #가능한 3채널, 색상 이미지로 사용
 # img = cv2.imread("iu.jpg", cv2.IMREAD_REDUCED_GRAYSCALE_2) #1채널, 1/2크기, 그레이스케일 적용
 # img = cv2.imread("iu.jpg", cv2.IMREAD_REDUCED_GRAYSCALE_4) #1채널, 1/4크기, 그레이스케일 적용
 # img = cv2.imread("iu.jpg", cv2.IMREAD_REDUCED_GRAYSCALE_4) #1채널, 1/8크기, 그레이스케일 적용

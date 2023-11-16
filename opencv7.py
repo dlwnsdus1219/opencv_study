@@ -14,12 +14,15 @@ height, width, channel = src.shape
 
 # 이미지 확대 함수(cv2.pyrUp(src(입력 이미지), dstSize(출력 이미지 크기), borderType(테두리 외삽법)))으로 이미지 2배 확대
 dst = cv2.pyrUp(src, dstsize=(width * 2, height * 2), borderType=cv2.BORDER_DEFAULT)
-# 이미지 축소 함수(BORDER_CONSTANT의 픽셀 외삽법 제외한 나머지 플래그만 사용 가능)
+# 이미지 축소 함수(cv2.pyrDown(src(입력 이미지), dstSize(출력 이미지 크기), borderType(테두리 외삽법)))
 dst2 = cv2.pyrDown(src, borderType=cv2.BORDER_WRAP)
 
+print(dst.height)
 cv2.imshow("src", src)
 cv2.imshow("dst", dst)
+cv2.imwrite("pyrup.jpg", dst)
 cv2.imshow("dst2", dst2)
+cv2.imwrite("pyrdown.jpg", dst2)
 cv2.waitKey()
 cv2.destroyAllWindows()
 

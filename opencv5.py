@@ -13,5 +13,7 @@ dst = cv2.flip(src, -1)
 cv2.imshow("src", src)
 #대칭된 이미지 출력
 cv2.imshow("dst", dst)
+# 이미지 저장은 imwrite
+cv2.imwrite('sym.jpg', dst)
 cv2.waitKey()
 cv2.destroyAllWindows()
